@@ -1,0 +1,3 @@
+# TypeScript Type Assertion Bypassing Runtime Errors
+
+This example demonstrates how using type assertion (`as any`) in TypeScript can bypass type checking and lead to unexpected runtime errors. The `calculateTotal` function expects an array of numbers. However, the `prices` array contains a string which causes a runtime error when trying to add it with other numbers in the for loop resulting in `NaN` as output. The solution shows how to use type guards to correctly check the type of array elements before performing operations on them.
